@@ -101,7 +101,7 @@ def load_data(data_dir):
             a = cv2.imread(file)
             a = cv2.resize(a,(IMG_WIDTH,IMG_HEIGHT))
             cv2.imwrite(file+'.png', a) 
-            data.ap     pend(a)
+            data.append(a)
             label.append(i)
     return(data,label)
     raise NotImplementedError
